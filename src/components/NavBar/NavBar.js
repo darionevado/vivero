@@ -1,14 +1,15 @@
 import React from 'react'
 import { CartWidget } from './CartWidget'
 import './NavBar.scss'
+import navLogo from './logo.jpg';
 
 export const NavBar = ( {logo} ) => {
 
 
     return (
         <header className="header">
-            <h1>{logo}</h1>
-
+            <img src={navLogo} alt="logo vivero los tilos" className="nav-logo"/>
+            
             <div>
                 <nav>
                     <p>Arboles</p>
@@ -18,7 +19,7 @@ export const NavBar = ( {logo} ) => {
                 </nav>
 
                 <CartWidget/>
-                
+
             </div>
         </header>
     )

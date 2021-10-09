@@ -11,13 +11,19 @@
         color: white;
     }
 
+    .nav-logo {
+        width: 24rem;
+        margin: 2rem auto 2rem 2rem;
+    }
+
+
     div {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         nav {
-            width: 50%;
+            width: 80%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -25,7 +31,7 @@
 
         .widget {
             color: white;
-            font-size: 30px;
+            font-size: 60px;
         }
     }
 }
