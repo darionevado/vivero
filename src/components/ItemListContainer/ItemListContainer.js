@@ -1,14 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { ItemList } from './ItemList'
+import { fetchItems } from '../../Helpers/fetchItems'
 
 export const ItemListContainer = () => {
 
+    const [items, setItems] = useState([])
+    const [loading, setLoading] = useState(false)
+
+    useEffect(()=>{
+        setLoading(true)
+
+        fetchItems()
+            .then( res => {
+                setItems(res)
+            })
+            .catch( err => console.log(err))
+            .finally( () => {
+                setLoading(false)
+            })
+
+    }, [])
+
     return (
-        <section>
+        <section className="item-card-section">
             {
-                <h2>Bienvenido a Vivero Los Tilos de Salliqueló !!</h2>
-                                
+                loading 
+                ? <h2>Cargando...</h2>
+                : <ItemList products={items} />
             }
-            
         </section>
     )
 }
