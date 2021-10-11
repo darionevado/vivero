@@ -1,70 +1,14 @@
-# Getting Started with Create React App
+Octubre de 2021.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+El siguiente repositorio forma parte de la entrega final de Dario Nevado del curso de React de CODERHOUSE 2021 Camada 19750 a cargo del Profesor Conrado Lanusse . 
 
-## Available Scripts
+El Vivero Los Tilos es un comercio de la ciudad de Salliqueló, provincia de Buenos Aires, Republica Argentina. El diseñador de este sitio es hermano de los propietarios del vivero, Rodrigo y Fabricio Nevado, por lo cual este sitio es un intento por colaborar con las ventas online, el mismo se encuentra en desarrollo y se completara a medida que el desarrollador vaya adquiriendo la experiencia necesaria.
 
-In the project directory, you can run:
+Todo el contenido disponible en el sitio es original y tiene derechos reservados. 
 
-### `npm start`
+El proyecto fue creado en a través del compilador Visual Studio Code usando principalmente React, en lenguaje HTML para la estructura y CSS para asignar los estilos. Ademas, se usaron librerias de Bootstrap y SASS. Tambien de utilizo JavaScripts para automatizar algunas funciones.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Sobre el autor: 
+Dario Oscar Nevado Vaquero, es tecnico informatico y profesor IT, argentino-español, nació y vive actualmente en Salliqueló. Para más información sobre su trabajo visitar:
+https://shs-soluciones-informaticas.negocio.site/?m=true.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -1,20 +1,59 @@
 import './App.css';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
+import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 import { NavBar } from './components/NavBar/NavBar';
 import logo from './components/NavBar/logo.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  BrowserRouter,
+  Route,
+  Switch,
+  Redirect
+} from 'react-router-dom'
+
 
 
 function App() {
 
   return (
-  
     <>
-        <NavBar logo="Vivero Los Tilos - Salliqueló"/>
-        <ItemListContainer greeting={"Bienvenidos"}/>
-    </>
+    <BrowserRouter>
 
+      <NavBar logo="Vivero Los Tilos - Salliqueló"/>
+      
+      <Switch>
+        <Route exact path="/">
+            <ItemListContainer />
+        </Route>
 
-  );
+        <Route exact path="/productos/:categoryId">
+            <ItemListContainer />
+        </Route>
+
+        <Route exact path="/detail/:itemId">
+            <ItemDetailContainer />
+        </Route>
+
+        <Route exact path="/contacto">
+            <h1>Contacto</h1>
+        </Route>
+
+        <Route exact path="/cart">
+          {/* TODO: hacer vista carrito */}
+          <h1>Carrito</h1>
+        </Route>
+
+        <Route path="*">
+            <Redirect to="/"/>
+        </Route>
+        {/* <Route path="*">
+            <h2>404... no encontrado</h2>
+        </Route> */}
+      </Switch>
+
+    </BrowserRouter>
+  </>
+);
 }
 
 export default App;
