@@ -1,6 +1,6 @@
 Octubre de 2021.
 
-El siguiente repositorio forma parte de la entrega final de Dario Nevado del curso de React de CODERHOUSE 2021 Camada 19750 a cargo del Profesor Conrado Lanusse . 
+El siguiente repositorio forma parte de la entrega final de Dario Nevado del curso de React de CODERHOUSE 2021 Camada 19750 a cargo del Profesor Conrado Lanusse y con la tutoria de Flavio Di Pietro. 
 
 El Vivero Los Tilos es un comercio de la ciudad de Salliqueló, provincia de Buenos Aires, Republica Argentina. El diseñador de este sitio es hermano de los propietarios del vivero, Rodrigo y Fabricio Nevado, por lo cual este sitio es un intento por colaborar con las ventas online, el mismo se encuentra en desarrollo y se completara a medida que el desarrollador vaya adquiriendo la experiencia necesaria.
 
