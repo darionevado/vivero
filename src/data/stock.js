@@ -1,3 +1,4 @@
+import {pic1, pic2, pic3, pic4, pic5, pic6} from "./images";
 
 export const stock = [
     {
@@ -6,8 +7,7 @@ export const stock = [
         description: "Arbol ideal sombra",
         category: "Arboles",
         price: 1500,
-        img: "https://picsum.photos/seed/33/300/200/?blur=2"
-        // intento de cargar imagenes desde mi carpeta local
+        img: pic1
     },
     {
         id: 2,
@@ -15,8 +15,7 @@ export const stock = [
         description: "Arbol hojas perenes",
         category: "Arboles",
         price: 2500,
-        img: "../../Data/arboles/fresno.jpg"
-        // intento de cargar imagenes desde mi carpeta local
+        img: pic2
     },
     {
         id: 3,
@@ -24,7 +23,7 @@ export const stock = [
         description: "Arbol muy colorido",
         category: "Arboles",
         price: 1800,
-        img: "./arboles/liquidambar.jpg"
+        img: pic3
     },
     {
         id: 4,
@@ -32,7 +31,7 @@ export const stock = [
         description: "Arbol caduco, ideal veredas",
         category: "Arboles",
         price: 6000,
-        img: "./arboles/tilo.jpg"
+        img: pic4
     },
     {
         id: 5,
@@ -40,7 +39,7 @@ export const stock = [
         description: "Arbusto pequeño",
         category: "Arbustos",
         price: 1500,
-        img: "./arbustos/cotoneaster.jpg"
+        img: pic5
     },
     {
         id: 6,
@@ -48,6 +47,6 @@ export const stock = [
         description: "Lindo arbusto",
         category: "Arbustos",
         price: 1500,
-        img: "./arbustos/laurentino.jpg"
+        img: pic6
     }
 ]
