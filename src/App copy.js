@@ -19,7 +19,8 @@ import './App.css';
 
 function App() {
 
-  
+  const {isAuthenticated} = useContext(UserAuthContext);
+
   return (
     <>
       <UIProvider>
@@ -31,7 +32,8 @@ function App() {
             <NavBar logo="Vivero Los Tilos - Salliqueló"/>
 
             <Switch>
-            
+            { isAuthenticated 
+              ?
               <>
 
               <Route exact path="/">
@@ -61,7 +63,9 @@ function App() {
                   <h2>404... no encontrado</h2>
               </Route> */}
               </>
-            
+              :
+                <UserAuthenticate/>
+              }
 
             </Switch>
         

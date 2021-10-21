@@ -1,4 +1,4 @@
-import {pic1, pic2, pic3, pic4, pic5, pic6} from "./images";
+import {pic11, pic12, pic13, pic14, pic21, pic22, pic23, pic24} from "./images";
 
 export const stock = [
     {
@@ -7,7 +7,7 @@ export const stock = [
         description: "Arbol ideal sombra",
         category: "Arboles",
         price: 1500,
-        img: pic1
+        img: pic11
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const stock = [
         description: "Arbol hojas perenes",
         category: "Arboles",
         price: 2500,
-        img: pic2
+        img: pic12
     },
     {
         id: 3,
@@ -23,7 +23,7 @@ export const stock = [
         description: "Arbol muy colorido",
         category: "Arboles",
         price: 1800,
-        img: pic3
+        img: pic13
     },
     {
         id: 4,
@@ -31,7 +31,7 @@ export const stock = [
         description: "Arbol caduco, ideal veredas",
         category: "Arboles",
         price: 6000,
-        img: pic4
+        img: pic14
     },
     {
         id: 5,
@@ -39,7 +39,7 @@ export const stock = [
         description: "Arbusto pequeño",
         category: "Arbustos",
         price: 1500,
-        img: pic5
+        img: pic21
     },
     {
         id: 6,
@@ -47,6 +47,22 @@ export const stock = [
         description: "Lindo arbusto",
         category: "Arbustos",
         price: 1500,
-        img: pic6
-    }
+        img: pic22
+    },
+    {
+        id: 7,
+        name: "Oleatexanum",
+        description: "Lindo arbusto",
+        category: "Arbustos",
+        price: 1500,
+        img: pic23
+    },
+    {
+        id: 8,
+        name: "Photinia",
+        description: "Lindo arbusto",
+        category: "Arbustos",
+        price: 1500,
+        img: pic24
+    },
 ]

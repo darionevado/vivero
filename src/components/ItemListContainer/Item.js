@@ -1,18 +1,24 @@
-import React from 'react';
-import { HiTag } from 'react-icons/hi';
-import { HiInformationCircle } from 'react-icons/hi';
-import './ItemListContainer.css';
+import React from 'react'
+import {Card, Button} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+import './ItemListContainer.css'
 
-export const Item = ( {id, name, description, category, price, img} ) => {
+export const Item = ( {id, name, price, img, description, category} ) => {
 
     return (
-        <div className= "item-card">
-        <img src={img} alt= {`${name} ${description}`} className="item-card-img"></img>
-        <p className= "item-card-category">{category.toUpperCase()}</p>
-        <p className= "item-card-product-name">{name}</p>
-        <p className= "item-card-description"> <HiInformationCircle className="item-card-icon"/> {description}</p>
-        <p className= "item-card-price"><HiTag className="item-card-icon"/> Precio: ${price}</p>
-        <button className= "item-card-btn">AGREGAR AL CARRITO</button>
-        </div>
+
+        <Card style={{ width: '18rem' }} className="m-3">
+            <Card.Img variant="top" src={img} />
+            <Card.Body>
+                <Card.Title>{name}</Card.Title>
+                <Card.Text>{description}</Card.Text>
+                <Card.Text>Precio: ${price}</Card.Text>
+                <Card.Text>Categoria: {category}</Card.Text>
+
+                <Link to={`/detail/${id}`}>
+                    <Button variant="primary">Ver Detalle</Button>
+                </Link>
+            </Card.Body>
+        </Card>
     )
 }

@@ -1,20 +1,25 @@
 import React from 'react'
 import { CartWidget } from './CartWidget'
-import navLogo from './logo-vivero.jpg';
+import navLogo from './logo-web.png';
 import { Link, NavLink } from 'react-router-dom'
 import './NavBar.scss'
+import { useContext } from 'react'
+import { UserAuthContext } from '../../context/UserAuthContext'
 
 export const NavBar = ( {logo} ) => {
 
-
+    
     return (
+        
         <header className="header">
+            
             <img src={navLogo} alt="logo vivero los tilos" className="nav-logo"/>
             
             <div>
                 <nav>
 
                     <NavLink activeClassName={'activeLink'} exact to="/">Inicio</NavLink>
+
                     <NavLink activeClassName={'activeLink'} exact to="/productos/arboles">Arboles</NavLink>
                     <NavLink activeClassName={'activeLink'} exact to="/productos/arbustos">Arbustos</NavLink>
                     <NavLink activeClassName={'activeLink'} exact to="/productos/florales">Florales</NavLink>
@@ -23,10 +28,10 @@ export const NavBar = ( {logo} ) => {
                     <NavLink activeClassName={'activeLink'} exact to="/contacto">Contacto</NavLink>
 
                     <Link to="/cart"><CartWidget/></Link>
+                
 
                 </nav>
             </div>
         </header>
     )
 }
-
