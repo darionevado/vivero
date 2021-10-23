@@ -5,7 +5,7 @@ export const stock = [
         id: 1,
         name: "Acer",
         description: "Arbol ideal sombra",
-        category: "Arboles",
+        category: "arboles",
         price: 1500,
         img: pic11
     },
@@ -13,7 +13,7 @@ export const stock = [
         id: 2,
         name: "Fresno",
         description: "Arbol hojas perenes",
-        category: "Arboles",
+        category: "arboles",
         price: 2500,
         img: pic12
     },
@@ -21,7 +21,7 @@ export const stock = [
         id: 3,
         name: "Liquidambar",
         description: "Arbol muy colorido",
-        category: "Arboles",
+        category: "arboles",
         price: 1800,
         img: pic13
     },
@@ -29,7 +29,7 @@ export const stock = [
         id: 4,
         name: "Tilo",
         description: "Arbol caduco, ideal veredas",
-        category: "Arboles",
+        category: "arboles",
         price: 6000,
         img: pic14
     },
@@ -37,7 +37,7 @@ export const stock = [
         id: 5,
         name: "Cotoneaster",
         description: "Arbusto pequeño",
-        category: "Arbustos",
+        category: "arbustos",
         price: 1500,
         img: pic21
     },
@@ -45,7 +45,7 @@ export const stock = [
         id: 6,
         name: "Laurentino",
         description: "Lindo arbusto",
-        category: "Arbustos",
+        category: "arbustos",
         price: 1500,
         img: pic22
     },
@@ -53,7 +53,7 @@ export const stock = [
         id: 7,
         name: "Oleatexanum",
         description: "Lindo arbusto",
-        category: "Arbustos",
+        category: "arbustos",
         price: 1500,
         img: pic23
     },
@@ -61,7 +61,7 @@ export const stock = [
         id: 8,
         name: "Photinia",
         description: "Lindo arbusto",
-        category: "Arbustos",
+        category: "arbustos",
         price: 1500,
         img: pic24
     },
