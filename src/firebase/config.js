@@ -1,29 +1,21 @@
-import firebase from 'firebase/app';
-import 'firebase/firestore';
-import 'firebase/auth';
+import firebase from 'firebase/app'
+import 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_API_KEY,
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_APP_ID,
+  apiKey: "AIzaSyBqRLqPJrRD4vn1cBPdUd0Qv4HFgc7vNVs",
+  authDomain: "vivero-los-tilos.firebaseapp.com",
+  projectId: "vivero-los-tilos",
+  storageBucket: "vivero-los-tilos.appspot.com",
+  messagingSenderId: "384786005010",
+  appId: "1:384786005010:web:2d5d8d81b6c97abaf02ccb"
 };
 
-const app = firebase.initializeApp(firebaseConfig);
+const app = firebase.initializeApp(firebaseConfig)
+
 
 export const getFirestore = () => {
-  return firebase.firestore(app);
-};
-
-// Funcion para consumir autenticación de firebase
-export const getAuth = () => {
-  return firebase.auth(app);
-};
-
-// Declaramos una constante proveedor y le asignamos google
-export const provider = new firebase.auth.GoogleAuthProvider();
+    return firebase.firestore(app)
+}
 
 // export const db = getFirestore()
