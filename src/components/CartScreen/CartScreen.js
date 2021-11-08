@@ -7,22 +7,24 @@ export const CartScreen = () => {
 
     const {carrito, vaciarCarrito, removeItem, calcularTotal} = useContext(CartContext)
 
+
     return (
         <div className="container my-5">
 
             {
-                carrito.length === 0
+                carrito.length === 0 // true - false
                 ? <>
+                    {/* <Redirect to="/"/> */}
                     <h2>No hay productos agregados</h2>
                     <Link to="/" className="btn btn-success">Ir a comprar</Link>
-                 </>
-                :
+                </>
+                : 
                     <>
                         <h2>Resumen de compra</h2>
                         <hr/>
 
                         {
-                            carrito.map( (prod) => (
+                            carrito.map( (prod) => ( 
                                 <div>
                                     <h4>{prod.name}</h4>
                                     <p>Cantidad: {prod.cantidad}</p>
@@ -42,6 +44,10 @@ export const CartScreen = () => {
                         >
                             Vaciar carrito
                         </button>
+
+                        <Link to="/checkout" className="btn btn-success mx-3">
+                            Terminar mi compra
+                        </Link>
                     </>
             } 
 

@@ -1,9 +1,10 @@
 import React from 'react'
 import {Card, Button} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import './ItemListContainer.css'
 
 export const Item = ( {id, name, price, img, description, category} ) => {
+
+    // console.log(props)
 
     return (
 
@@ -16,7 +17,7 @@ export const Item = ( {id, name, price, img, description, category} ) => {
                 <Card.Text>Categoria: {category}</Card.Text>
 
                 <Link to={`/detail/${id}`}>
-                    <Button variant="primary">Ver Detalle</Button>
+                    <Button variant="primary">Lo quiero</Button>
                 </Link>
             </Card.Body>
         </Card>

@@ -1,14 +1,20 @@
 import React from 'react'
+import { useContext } from 'react'
 import { CartWidget } from './CartWidget'
 import navLogo from './logo-web.png';
 import { Link, NavLink } from 'react-router-dom'
-import './NavBar.scss'
-import { useContext } from 'react'
 import { UserAuthContext } from '../../context/UserAuthContext'
+import './NavBar.scss'
 
 export const NavBar = ( {logo} ) => {
 
-    
+    const { isAuthenticated, setIsAuthenticated } = useContext(UserAuthContext);
+    const handlesubmit = () => {
+        setIsAuthenticated(false);
+    }
+
+    const { logout } = useContext(UserAuthContext);
+
     return (
         
         <header className="header">
@@ -27,11 +33,12 @@ export const NavBar = ( {logo} ) => {
 
                     <NavLink activeClassName={'activeLink'} exact to="/contacto">Contacto</NavLink>
 
-                    <Link to="/cart"><CartWidget/></Link>
-                
-
+                    <Link to='/cart'>
+                        <CartWidget />
+                    </Link>
+                    <button onClick={logout}> Salir</button>    
                 </nav>
             </div>
         </header>
-    )
-}
+    );
+};

@@ -1,4 +1,4 @@
-import { stock } from "../Data/stock"
+import { stock } from "../data/stock"
 
 export const pedirProductos = () => {
     return new Promise((resolve, reject) => {

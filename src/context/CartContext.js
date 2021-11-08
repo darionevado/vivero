@@ -11,16 +11,16 @@ export const CartProvider = ( {children} ) => {
     console.log(carrito)
     
     const addToCart = (item) => {
-        setCarrito( [...carrito, item] )
+      setCarrito( [...carrito, item] )
     }
     
     const removeItem = (itemId) => {
-    const newCart = carrito.filter( (prod) => prod.id !== itemId)
-        setCarrito( newCart )
+      const newCart = carrito.filter( (prod) => prod.id !== itemId)
+      setCarrito( newCart )
     }
-
+  
     const calcularCantidad = () => {
-        return carrito.reduce( (acc, prod) => acc + prod.cantidad, 0 )
+      return carrito.reduce( (acc, prod) => acc + prod.cantidad, 0 )
     }
 
     const calcularTotal = () => {
@@ -28,17 +28,17 @@ export const CartProvider = ( {children} ) => {
     }
 
     const isInCart = (itemId) => {
-        return carrito.some( (prod) => prod.id === itemId)
+      return carrito.some( (prod) => prod.id === itemId)
     }
-
+  
     const vaciarCarrito = () => {
-        setCarrito([])
+      setCarrito([])
     }
     
     useEffect(()=>{
-        localStorage.setItem('carrito', JSON.stringify(carrito))
+      localStorage.setItem('carrito', JSON.stringify(carrito))
     }, [carrito])
-
+  
     return (
         <CartContext.Provider value={ {
             carrito,

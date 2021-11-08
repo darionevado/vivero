@@ -7,7 +7,8 @@ export const stock = [
         description: "Arbol ideal sombra",
         category: "arboles",
         price: 1500,
-        img: pic11
+        img: pic11,
+        stock: 20
     },
     {
         id: 2,
@@ -15,7 +16,8 @@ export const stock = [
         description: "Arbol hojas perenes",
         category: "arboles",
         price: 2500,
-        img: pic12
+        img: pic12,
+        stock: 20
     },
     {
         id: 3,
@@ -23,7 +25,8 @@ export const stock = [
         description: "Arbol muy colorido",
         category: "arboles",
         price: 1800,
-        img: pic13
+        img: pic13,
+        stock: 20
     },
     {
         id: 4,
@@ -31,7 +34,8 @@ export const stock = [
         description: "Arbol caduco, ideal veredas",
         category: "arboles",
         price: 6000,
-        img: pic14
+        img: pic14,
+        stock: 20
     },
     {
         id: 5,
@@ -39,7 +43,8 @@ export const stock = [
         description: "Arbusto pequeño",
         category: "arbustos",
         price: 1500,
-        img: pic21
+        img: pic21,
+        stock: 20
     },
     {
         id: 6,
@@ -47,7 +52,8 @@ export const stock = [
         description: "Lindo arbusto",
         category: "arbustos",
         price: 1500,
-        img: pic22
+        img: pic22,
+        stock: 20
     },
     {
         id: 7,
@@ -55,7 +61,8 @@ export const stock = [
         description: "Lindo arbusto",
         category: "arbustos",
         price: 1500,
-        img: pic23
+        img: pic23,
+        stock: 20
     },
     {
         id: 8,
@@ -63,6 +70,7 @@ export const stock = [
         description: "Lindo arbusto",
         category: "arbustos",
         price: 1500,
-        img: pic24
+        img: pic24,
+        stock: 20
     },
 ]
